@@ -473,7 +473,7 @@ button {
 }
 
 .team-social-icons {
-    fill: currentColor;
+    fill: var(--secondory-footer-color);
 }
 
 .section-customers {
