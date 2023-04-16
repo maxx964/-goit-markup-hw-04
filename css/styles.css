@@ -499,14 +499,14 @@ button {
 } */
 
 .titel-customers {
-    margin-bottom: 77px;
+    margin-bottom: 72px;
 
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
     text-align: center;
     letter-spacing: 0.03em;
-
+    color: var(--secondory-font-color);
 }
 
 .customers-list {
@@ -547,7 +547,8 @@ button {
 
 .customer-link:hover,
 .customer-link:focus {
-    color: var(--header-color-hover);
+    color: var(--btn-hero-color-hover);
+    border: 1px solid var(--btn-hero-color-hover);
 }
 
 .icon-customers {
