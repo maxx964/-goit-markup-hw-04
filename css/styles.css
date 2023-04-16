@@ -219,7 +219,7 @@ img {
     background-image: url(../css/bgr-img-hero/dark-bgr.png), url(../css/bgr-img-hero/bgr-hero.png);
     background-repeat: no-repeat;
     background-position: center;
-    /* background-size: cover; */
+    background-size: cover;
 
 
     text-align: center;
@@ -345,7 +345,7 @@ button {
 
 
 .section-advantages {
-    /* padding-top: 120px; */
+    padding-top: 120px;
     padding-bottom: 120px;
     background-color: var(--main-light-color);
 
@@ -367,6 +367,8 @@ button {
 }
 
 .icon-advantages {
+    height: 112px;
+    margin-bottom: 8px;
     text-align: center;
     background-size: 264px;
     background: #F4F4FD;
