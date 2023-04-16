@@ -30,9 +30,9 @@ p {
     margin: 0;
 }
 
-use {
+/* use {
     fill: currentColor;
-}
+} */
 
 .header {
     border-bottom: 1px solid #e7e9fc;
@@ -210,7 +210,10 @@ img {
 
 
 .section-hero {
-    /* background-color: #2E2F42; */
+    padding-top: 188px;
+    padding-bottom: 188px;
+
+    text-align: center;
     max-width: 1440px;
     min-height: 603px;
     margin-left: auto;
@@ -221,9 +224,8 @@ img {
     background-size: cover;
 
 
-    text-align: center;
-    padding-top: 188px;
-    padding-bottom: 188px;
+
+
     /* розмір секціям ми задаемо через padding якщо наприклад в секції є
 заголовок то відступ в данному випадку рахуються зверху від заголовка 188px 
 і від низу заголовка теж 188px */
