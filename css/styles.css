@@ -472,6 +472,11 @@ button {
     color: var(--main-light-color);
 }
 
+.social-link:hover,
+.social-link:focus {
+    background-color: var(--header-color-hover);
+}
+
 .team-social-icons {
     fill: var(--secondory-footer-color);
 }
