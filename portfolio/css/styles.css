@@ -233,7 +233,7 @@ img {
     але автоперевірка не приймає тому значення з одиничкою залишаємо*/
     border: 1px solid transparent;
     background-color: var(--active-color-hover);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -247,12 +247,15 @@ img {
 
     column-gap: 24px;
     row-gap: 48px;
-
     margin: 0;
     /* Для списку в класі заданий стиль column-gap: 24px;
 для визначення горизонтальних відступів між пунктами списку
  (можна використовувати margin-right: 24px для тега li у класі) */
 
+}
+
+link {
+    display: block;
 }
 
 .item-images {
@@ -271,7 +274,7 @@ img {
 
 .item-images:hover,
 .item-images:focus {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08)
 }
 
 .div-title-text {
@@ -347,7 +350,6 @@ img {
 
 .text-social-media {
     margin-bottom: 16px;
-
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
