@@ -617,7 +617,7 @@ outline: 1px solid red;
 
 .text-social-media {
     margin-bottom: 16px;
-    font-weight: 600px;
+    font-weight: 500px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -647,5 +647,5 @@ outline: 1px solid red;
 }
 
 .footer-icon {
-    fill: currentColor;
+    fill: var(--bgr-color-icon);
 }
