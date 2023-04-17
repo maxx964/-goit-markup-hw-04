@@ -8,6 +8,7 @@
     --background-color-btn: #F4F4FD;
     --accent-color-cornflower: #e7e9fc;
     --green-color: #31D0AA;
+    --bgr-color-icon: #F4F4FD;
 }
 
 body {
@@ -353,12 +354,6 @@ img {
 
 
 .text-social-media {
-    /* margin-bottom: 16px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #FFFFFF; */
     margin-bottom: 16px;
 
     font-family: 'Roboto';
@@ -388,4 +383,8 @@ img {
 .footer-social-link:hover,
 .footer-social-link:focus {
     background-color: var(--green-color);
+}
+
+.footer-icon {
+    fill: var(--bgr-color-icon);
 }
