@@ -210,23 +210,27 @@ img {
     padding-top: 188px;
     padding-bottom: 188px;
 
-    text-align: center;
-    max-width: 1440px;
-    min-height: 603px;
+    /* text-align: center;
+    max-width: 1440px; */
     margin-left: auto;
     margin-right: auto;
 
+    /* background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpeg), url(../css/hero/people-office.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    /* розмір секціям ми задаемо через padding якщо наприклад в секції є
+заголовок то відступ в данному випадку рахуються зверху від заголовка 188px 
+і від низу заголовка теж 188px */
+}
+
+.hero-img {
+    text-align: center;
+    max-width: 1440px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpeg), url(../css/hero/people-office.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
-
-
-
-    /* розмір секціям ми задаемо через padding якщо наприклад в секції є
-заголовок то відступ в данному випадку рахуються зверху від заголовка 188px 
-і від низу заголовка теж 188px */
 }
 
 
