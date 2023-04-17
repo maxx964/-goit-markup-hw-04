@@ -596,12 +596,18 @@ button {
 }
 
 .text-social-media {
-    margin-bottom: 16px;
+    /* margin-bottom: 16px;
     font-weight: 600px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    color: #FFFFFF; */
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-light-color);
 }
 
 .list-footer-social {
