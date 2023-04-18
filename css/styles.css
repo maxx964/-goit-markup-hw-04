@@ -88,6 +88,8 @@ img {
     /* для приховання логічного зоголовка застосовуемо .visually-hidden */
 }
 
+/*  СЕКЦІЯ HEADER умовно шапка сайту*/
+
 .container-header {
     display: flex;
     align-items: center;
@@ -108,8 +110,8 @@ img {
 /* скидання крайньої геометрії тобто марджину за допомогою :not(:last-child) у останьої дити в списку у
 всіх що перед ним марджин залишається (!крайній марджин прибираємо ЗАВЖДИ!) */
 /* 
-.list-nav .item:not(:last-child),
-.list-address .item:not(:last-child) {
+.list-nav>.item:not(:last-child),
+.list-address>.item:not(:last-child) {
     margin-right: 40px; */
 
 
@@ -128,13 +130,6 @@ img {
     gap: 40px;
 
 }
-
-/* .item-header {
-    margin-right: 40px;
-} */
-
-
-
 
 .logotyp {
     font-family: "Raleway", sans-serif;
@@ -192,9 +187,7 @@ img {
 
 }
 
-/* .item-address {
-    margin-right: 40px;
-} */
+
 
 
 .header-contact {
@@ -205,6 +198,7 @@ img {
 }
 
 
+/* ГОЛОВНА СЕКЦІЯ  HERO */
 
 .hero-section {
     padding-top: 188px;
@@ -246,7 +240,7 @@ img {
     в данному випадку це заголовок відступ у низ до кнопки margin-bottom: 48px;*/
 }
 
-/* В СТРОЧНИХ ЄЛЕМЕНТІВ НЕМАЄ ПАРАМЕТРІВ ВЕРХНІХ НИЖНІХ МАРДЖЕНІВ */
+
 button {
     height: 56px;
     display: block;
@@ -256,6 +250,10 @@ button {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     padding: 16px 32px
+        /* В СТРОЧНИХ ЄЛЕМЕНТІВ НЕМАЄ ПАРАМЕТРІВ ВЕРХНІХ НИЖНІХ МАРДЖЕНІВ  якщо потрібно
+    задати їм висоти чи ширини робимо з них блочно-сточні задаємо display-inline:block чи
+    просто   display: block; */
+
 }
 
 .btn-hero {
@@ -269,8 +267,7 @@ button {
     color: var(--bgr-color-icon);
     background-color: #4D5AE5;
     border: none;
-
-
+    /* ТАКОЖ КНОПКИ НЕ УНАСЛІДУЮТЬ параметри від батьків тому ім задаємо це окремо */
 }
 
 
@@ -280,6 +277,52 @@ button {
 
 }
 
+/* СЕКЦІЯ ПЕРЕВАГИ */
+
+.section-advantages {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: var(--main-light-color);
+}
+
+.list-advantages {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 24px; */
+    margin-left: -24px;
+
+}
+
+.item-advantages {
+    flex-basis: calc(100% / 4 - 24px);
+    margin-left: 24px;
+    /* width: calc((100% - 3 * 24px) / 4); */
+}
+
+.icon-advantages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 112px;
+    margin-bottom: 8px;
+    background-size: 264px;
+    background: #F4F4FD;
+    border-radius: 4px;
+}
+
+/* 
+.item-punctuality::before {
+    background-image: url(../css/bgr-img-hero/clock.png);
+}
+
+.item-deligenc::before {
+    background-image: url(../css/bgr-img-hero/diagram.png); 
+}
+
+.item-technologies::before {
+    background-image: url(../css/bgr-img-hero/astronaut.png);
+} */
 
 .title-advantages {
     margin-bottom: 8px;
@@ -336,68 +379,6 @@ button {
 
 
 
-.section-advantages {
-    padding-top: 120px;
-    padding-bottom: 120px;
-    background-color: var(--main-light-color);
-
-
-}
-
-
-.list-advantages {
-    display: flex;
-    flex-wrap: wrap;
-    /* gap: 24px; */
-    margin-left: -24px;
-
-}
-
-.item-advantages {
-    flex-basis: calc(100% / 4 - 24px);
-    margin-left: 24px;
-    /* width: calc((100% - 3 * 24px) / 4); */
-}
-
-.icon-advantages {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    height: 112px;
-    margin-bottom: 8px;
-    background-size: 264px;
-    background: #F4F4FD;
-    border-radius: 4px;
-}
-
-/* .item-advantages::before {
-    margin-bottom: 8px;
-
-    display: block;
-    content: "";
-    height: 112px;
-    background: #F4F4FD;
-    background-image: url(../css/bgr-img-hero/antenna.png);
-    background-repeat: no-repeat;
-    /* background-size: contain;????????? */
-/* background-position: center; */
-/* border-radius: 4px; */
-/* }
-
-.item-punctuality::before {
-    background-image: url(../css/bgr-img-hero/clock.png);
-}
-
-.item-deligenc::before {
-    background-image: url(../css/bgr-img-hero/diagram.png);
-}
-
-.item-technologies::before {
-    background-image: url(../css/bgr-img-hero/astronaut.png)
-} */
-
-
 .section-whatdoing {
     padding-bottom: 120px;
     background-color: var(--main-light-color);
@@ -422,7 +403,7 @@ button {
     padding-bottom: 120px;
     background-color: #F4F4FD;
 
-    /* margin: 0 auto;
+    /* margin: 0 auto в секції не може бути марджину бо то найбільша  секція ;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     значення не вірні бо не вірний макет*/
 }
