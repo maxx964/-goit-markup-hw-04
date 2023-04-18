@@ -133,8 +133,8 @@ img {
     color: var(--secondory-font-color);
 }
 
-.item-header:hover,
-.item-header:focus {
+.header-link:hover,
+.header-link:focus {
     color: var(--active-color-hover);
 }
 
