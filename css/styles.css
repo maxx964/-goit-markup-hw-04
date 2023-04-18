@@ -218,11 +218,13 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
-
     /* розмір секціям ми задаемо через padding якщо наприклад в секції є
 заголовок то відступ в данному випадку рахуються зверху від заголовка 188px 
 і від низу заголовка теж 188px */
+}
+
+.hero-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero-img.jpg);
 }
 
 
