@@ -126,7 +126,7 @@ img {
 }
 
 .header-link {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -356,7 +356,7 @@ img {
 .text-social-media {
     margin-bottom: 16px;
 
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -375,7 +375,7 @@ img {
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    background-color: #8E8F99;
+    background-color: var(--secondory-font-accent-color);
     color: var(--main-light-color);
 }
 
